@@ -118,7 +118,7 @@ h1, h2, h3, h4 {
     var(--snow);
 }
 
-.section:nth-of-type(even) {
+.section:not(.features):nth-of-type(even) {
   background:
     radial-gradient(ellipse 55% 45% at 96% -5%, rgba(240, 169, 62, 0.08), transparent 60%),
     radial-gradient(ellipse 50% 45% at 4% 105%, rgba(31, 143, 224, 0.06), transparent 60%),
