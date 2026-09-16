@@ -16,10 +16,10 @@
   --pine-deep: #145c3d;
   --amber: #f0a93e;
   --amber-deep: #d98f22;
-  --snow: #f6f9fb;
+  --snow: #eef3f7;
   --paper: #ffffff;
-  --mist: #e7eef3;
-  --line: #dbe4ea;
+  --mist: #e1eaf1;
+  --line: #d5e0e8;
 
   --font-display: "Barlow Condensed", "Noto Sans Devanagari", sans-serif;
   --font-body: "Work Sans", "Noto Sans Devanagari", sans-serif;
@@ -112,6 +112,17 @@ h1, h2, h3, h4 {
 .section {
   padding-block: 5.5rem;
   position: relative;
+  background:
+    radial-gradient(ellipse 55% 45% at 6% -5%, rgba(31, 143, 224, 0.08), transparent 60%),
+    radial-gradient(ellipse 50% 45% at 96% 105%, rgba(31, 122, 83, 0.07), transparent 60%),
+    var(--snow);
+}
+
+.section:nth-of-type(even) {
+  background:
+    radial-gradient(ellipse 55% 45% at 96% -5%, rgba(240, 169, 62, 0.08), transparent 60%),
+    radial-gradient(ellipse 50% 45% at 4% 105%, rgba(31, 143, 224, 0.06), transparent 60%),
+    var(--mist);
 }
 
 .section-head {
